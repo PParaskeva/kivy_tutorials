@@ -1,0 +1,31 @@
+<CustomLayout>:
+    orientation: "vertical"
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    BoxLayout:
+        orientation: "horizontal"
+        size_hint_y: None
+        height: self.size[0]/20
+        canvas.before:
+            Color:
+                rgba: 1,0,0,1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+        Label:
+            text: "Login Page"
+            size_hint_x: 0.9
+        Label:
+            text: "X"
+            size_hint_x: 0.1
+    BoxLayout:
+        orientation: "vertical"
+        TextInput:
+            hint: "Username"
+    Label:
+             
+                     
