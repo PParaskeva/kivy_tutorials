@@ -19,13 +19,32 @@
         Label:
             text: "Login Page"
             size_hint_x: 0.9
+            
         Label:
             text: "X"
             size_hint_x: 0.1
+            
     BoxLayout:
         orientation: "vertical"
+        padding: 10
+        spacing: 10
         TextInput:
-            hint: "Username"
+            hint_text: "Username"
+            size_hint_y: None
+            height: dp(56)
+            
+        TextInput:
+            hint_text: "Password"
+            size_hint_y: None
+            height: dp(56)
+        Button:
+            text: "Login"
+            size_hint_y: None
+            height: dp(56)
+            background_color: 1,0,0,1
+            background_normal: ""
+            
+        
     Label:
              
                      
